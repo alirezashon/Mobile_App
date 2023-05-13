@@ -1,28 +1,30 @@
-import { StyleSheet } from 'react-native';
-import { Text, View } from '../../components/Themed';
+/** @format */
+
+import { StyleSheet, ScrollView,View } from 'react-native'
+import { Text } from '../../components/Themed'
+import SVG from '../../components/SVG'
+import Circulation from '../../components/SVG/Circulation'
 
 export default function TabTwoScreen() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab Two</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-    </View>
-  );
+	return (
+		<>
+			<ScrollView style={styles.container}>
+				<View style={{ height: '30%' }}>
+					<SVG />
+				</View>
+				<View style={{ height: '50%' }}>
+					<Circulation />
+				</View>
+			</ScrollView>
+		</>
+	)
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
-});
+	container: {
+	
+		backgroundColor: 'lightgray',
+		flex: 1,
+
+	},
+})

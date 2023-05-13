@@ -64,7 +64,7 @@ const IssuesList: React.FC<IssuesListProps> = ({ issues, onPress }) => {
               <FontAwesome
                 name='thumbs-up'
                 size={24}
-                color='#4A90E2'
+                color='#499b01'
               />
             </TouchableOpacity>
             <TouchableOpacity
